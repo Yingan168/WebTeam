@@ -3,54 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>InnoTeam - Professional Development Team</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <!-- Navigation -->
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <img src="assets/logo.png" alt="InnoTeam Logo" class="logo">
+                    <span>InnoTeam</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#about">Skill</a></li>
+                <li><a href="#services">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-    
-    <section class="hero">
-        <img src="" alt="Your Image">
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple website with a navigation bar, hero section, and about section.</p>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Innovating Tech <span class="highlight">Together</span></h1>
+
+                <p>We're a team of passionate innovators, designers, and developers working together to create extraordinary digital experiences that make a difference.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Coding Hours</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Project Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Innovative Features</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#careers" class="btn btn-primary">Join Our Team</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero.jpeg" alt="Our Team at Work">
+            </div>
+        </div>
     </section>
 
-    <section class="about">
-        <div class="about-card">
-            <img src="image1.jpg" alt="Image 1">
-            <h3>John Doe</h3>
-            <p>Phone: 123-456-7890</p>
-            <p>Bio: This is a short bio about John Doe.</p>
-        </div>
-
-        <div class="about-card">
-            <img src="image2.jpg" alt="Image 2">
-            <h3>Jane Smith</h3>
-            <p>Phone: 987-654-3210</p>
-            <p>Bio: This is a short bio about Jane Smith.</p>
-        </div>
-
-        <div class="about-card">
-            <img src="image3.jpg" alt="Image 3">
-            <h3>David Lee</h3>
-            <p>Phone: 555-123-4567</p>
-            <p>Bio: This is a short bio about David Lee.</p>
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Team</h2>
+                <p>We are a team of passionate individuals who are always striving to improve our skills and knowledge to develop an impactful web application.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="assets/profile1.webp" alt="John Doe" class="member-img">
+                    <div class="member-info">
+                        <h3>John Doe</h3>
+                        <div class="role">Project Lead</div>
+                        <div class="contact">📱 (555) 123-4567</div>
+                        <p>John brings his experience in project management and team leadership, drives our team's success.</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="assets/profile1.webp" alt="Jane Smith" class="member-img">
+                    <div class="member-info">
+                        <h3>Jane Smith</h3>
+                        <div class="role">UX Designer</div>
+                        <div class="contact">📱 (555) 234-5678</div>
+                        <p>Jane is our creative force, ensuring our solutions are both beautiful and functional. Her work has won multiple design awards.</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="assets/profile1.webp" alt="Mike Johnson" class="member-img">
+                    <div class="member-info">
+                        <h3>Mike Johnson</h3>
+                        <div class="role">Full Stack Developer</div>
+                        <div class="contact">📱 (555) 345-6789</div>
+                        <p>Mike's expertise in modern web technologies and passion for clean code has been crucial to our success.</p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="info">
-        <h2>More Information</h2>
-        <p>You can find more information about this website here.</p>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        &copy; 2023 My Website
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="InnoTeam Logo" class="logo">
+                    <span>InnoTeam</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#about">Skill</a></li>
+                            <li><a href="#services">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Our Specialization</h4>
+                        <ul>
+                            <li><a href="#web">Web Development</a></li>
+                            <li><a href="#mobile">Mobile Apps</a></li>
+                            <li><a href="#design">UI/UX Design</a></li>
+                            <li><a href="#devops">DevOps</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect Us</h4>
+                        <div class="social-links">
+                            <a href="#">Facebook</a>
+                            <a href="#">LinkedIn</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 InnoTeam. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>
