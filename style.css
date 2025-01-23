@@ -14,13 +14,13 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 32px;
 }
 
 /* Navigation */
 nav {
   background-color: rgba(255, 255, 255, 0.95);
-  padding: 1rem 0;
+  padding: 8px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -29,63 +29,49 @@ nav {
 }
 
 .nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin:0 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 32px;
 }
 
 .nav-logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #333;
+  color: #274369;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 32px;
 }
 
 .logo {
-  height: 40px;
-  margin-right: 0.5rem;
+  height: 100px;
+  margin-right: 0;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 24px;
   list-style: none;
 }
 
 .nav-links a {
-  color: #333;
+  color: #26211E;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  transition: color 0.3s;
+  font-weight: 400;
+  padding: 8px 16px;
 }
 
 .nav-links a:hover {
   color: #007bff;
 }
 
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  width: 30px;
-  height: 2px;
-  background-color: #333;
-  transition: all 0.3s;
-}
-
 /* Hero Section */
 .hero {
-  padding: 8rem 2rem 4rem;
+  padding: 144px 32px 64px;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   min-height: 100vh;
   display: flex;
@@ -93,18 +79,18 @@ nav {
 }
 
 .hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0 75px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 64px;
   align-items: center;
 }
 
 .hero-content h1 {
-  font-size: 4rem;
+  font-size: 64px;
   line-height: 1.1;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .highlight {
@@ -112,39 +98,40 @@ nav {
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: 19px;
   color: #666;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 32px;
+  margin-bottom: 32px;
 }
 
 .stat-number {
   display: block;
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: bold;
   color: #007bff;
 }
 
 .stat-label {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: #666;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .btn {
-  padding: 0.8rem 2rem;
+  padding: 16px 32px;
   border-radius: 50px;
   font-weight: bold;
+  font-size: 18px;
   text-decoration: none;
   transition: transform 0.3s, box-shadow 0.3s;
   border: none;
@@ -152,7 +139,7 @@ nav {
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -167,6 +154,10 @@ nav {
   border: 2px solid #007bff;
 }
 
+.hero-image {
+  margin-left: 50px;
+}
+
 .hero-image img {
   width: 100%;
   height: auto;
@@ -177,39 +168,38 @@ nav {
 /* Section Headers */
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 64px;
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
+  font-size: 40px;
+  color: #26211E;
+  margin-bottom: 16px;
 }
 
 .section-header p {
   color: #666;
-  font-size: 1.2rem;
-  max-width: 700px; 
-  width: 100%; 
-  margin: 0 auto; 
+  font-size: 19px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Team Section */
 .team {
-  padding: 6rem 0;
+  padding: 48px 0;
   background-color: #fff;
 }
 
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 32px;
 }
 
 .team-member {
   background: #f8f9fa;
   border-radius: 10px;
-  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
@@ -220,34 +210,35 @@ nav {
 
 .member-img {
   width: 100%;
-  height: 300px;
+  height: 325px;
   object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .member-info {
-  padding: 1.5rem;
+  padding: 24px;
 }
 
 .member-info h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 24px;
+  margin-bottom: 8px;
 }
 
 .role {
   color: #007bff;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .contact {
   color: #666;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .member-social {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 16px;
+  margin-top: 16px;
 }
 
 .social-link {
@@ -261,16 +252,16 @@ nav {
 
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: #26211E;
   color: white;
-  padding: 4rem 0 2rem;
+  padding: 64px 0 32px;
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 4rem;
-  margin-bottom: 2rem;
+  gap: 64px;
+  margin-bottom: 32px;
 }
 
 .footer-logo {
@@ -285,17 +276,17 @@ footer {
 .footer-logo span {
   color: #FFFFFF;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 .footer-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 32px;
 }
 
 .footer-section h4 {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .footer-section ul {
@@ -303,27 +294,21 @@ footer {
 }
 
 .footer-section ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .footer-section a {
   color: #fff;
   text-decoration: none;
-  opacity: 0.8;
-  transition: opacity 0.3s;
-}
-
-.footer-section a:hover {
-  opacity: 1;
 }
 
 .social-links {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .footer-bottom {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 32px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
